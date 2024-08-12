@@ -5,25 +5,31 @@ This GitHub repository hosts the 'Righting the Writers' project materials, which
 
 ## Repository Structure
 
-- **/scripts**: This includes Python and R scripts for data collection and analysis. Python scripts handle data retrieval and initial processing, while R scripts are used for  analysis.
+- **/scripts**: This includes Python scripts for data retrieval and initial processing, as well as sentiment analysis over time.
 
-- **/notebooks**: Jupyter notebooks document the step-by-step processes of the analyses, including data cleaning and exploratory data analysis.
+- **/notebooks**: Jupyter notebooks document the step-by-step processes of data cleaning, Wikipedia link retrieval, and exploratory data analysis.
 
-- **/papers**: This folder contains the final research paper in PDF format, which details the study's findings and methodology.
+- **/papers**: This folder contains the final research paper in PDF format, detailing the study's findings and methodology.
 
 - **requirements.txt**: This file lists all Python dependencies necessary to run the scripts, ensuring the analysis's replicability.
 
 ## Key Files
 
-- **Analysis.R**: R script for performing the statistical analysis using event study and DiD methodologies.
-  
-- **paper.ipynb**: A Jupyter notebook that complements the R script by providing a visual and interactive component to the analysis and preliminary data cleaning.
-  
-- **Summer_Research_Paper-Righting the Writers.pdf**: The final paper summarizing the study's motivation, methodology, results, and implications.
-  
-- **get_articles.py & analyze.py**: Python scripts used for scraping Wikipedia data and initial data processing.
+- **web_scrape_politician_data.py**: Python script for scraping Wikipedia data on politicians over time.
+
+- **sentiment_analysis.py**: Python script for performing sentiment analysis on the scraped data.
+
+- **data_cleaning_and_wikipedia_retrieval.ipynb**: Jupyter notebook for cleaning the list of politician names and retrieving Wikipedia links.
+
+- **sentiment_mapping.ipynb**: Jupyter notebook for mapping and visualizing sentiment trends over time.
+
+- **Final_Research_Paper.pdf**: The final paper summarizing the study's motivation, methodology, results, and implications.
 
 ## Installation
 
-To set up the environment to run the scripts and notebooks, Python 3.8+ and R 4.0+ are required. Install Python dependencies using:
+To set up the environment to run the scripts and notebooks, Python 3.8+ is required. Install Python dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
 
